@@ -71,10 +71,11 @@ def inital_parameter():
 def deg_to_rad(deg):
     return deg*np.pi/ 180
 
-
+    
 def rad_to_degrees(rad):
     return rad*180/np.pi
 
+    
 def initial_variables():
     """
     Creating the initial conditions for the quantities
@@ -157,8 +158,6 @@ def volume(r, h):
 
 
 def dr(z, m, r,v ):
-    #h=geth(r,m)
-    #return np.sqrt(7 / 2 * alpha * rho_a(z) / (m / volume(r,h)))*v
     return np.sqrt(7 / 2 * alpha * rho_a(z) / rho_m)*v
 
 def density(m,r):
